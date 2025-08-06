@@ -6,10 +6,12 @@ input {
     border: 1px solid transparent;
     font-size: 20px;
     padding-left: 10px;
+    color: white; /* Input text color */
 }
 
 label {
     font-size: 20px;
+    color: white; /* Label text color */
 }
 
 textarea {
@@ -18,6 +20,7 @@ textarea {
     border: 1px solid transparent;
     font-size: 20px;
     font-family: inherit;
+    color: white; /* Textarea text color */
 }
 
 input[type=submit] {
@@ -30,14 +33,19 @@ input[type=submit] {
     font-weight: 500;
     font-family: inherit;
     background-color: #1a1a1a;
-    color:white;
+    color: white;
     cursor: pointer;
     transition: border-color 0.25s;
     margin-top: 20px;
-  }
+}
 
 input[type=submit]:hover {
     border-color: #646cff;
+}
+
+input[type=submit]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .deleteButton {
@@ -50,9 +58,29 @@ input[type=submit]:hover {
     font-weight: 500;
     font-family: inherit;
     background-color: #870404;
-    color:white;
+    color: white;
     cursor: pointer;
     transition: border-color 0.25s;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.deleteButton:hover {
+    border-color: #ff4444;
+}
+
+.deleteButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Add styling for the page title */
+h2 {
+    color: white; /* Page title color */
+}
+
+/* Add styling for error messages */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
 }

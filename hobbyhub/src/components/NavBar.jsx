@@ -5,7 +5,7 @@ import "./NavBar.css"
 const NavBar = () => {
     return (
         <div className="side-navbar">
-            <h2>D&D Party</h2>
+            <h2>BookHub</h2>
             <Link to="/" className="nav-button">Home</Link>
             <Link to="/create" className="nav-button">Create New Post</Link>
         </div>

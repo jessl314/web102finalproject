@@ -6,10 +6,12 @@ input {
     border: 1px solid transparent;
     font-size: 20px;
     padding-left: 10px;
+    color: white; /* Input text color */
 }
 
 label {
     font-size: 20px;
+    color: white; /* Label text color */
 }
 
 textarea {
@@ -17,6 +19,7 @@ textarea {
     width: 100%;
     border: 1px solid transparent;
     font-size: 20px;
+    color: white; /* Textarea text color */
 }
 
 input[type=submit] {
@@ -37,4 +40,15 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border-color: #646cff;
+}
+
+/* Add styling for the page title */
+h2 {
+    color: white; /* Page title color */
+}
+
+/* Add styling for error messages */
+.error-message {
+    color: red;
+    margin-bottom: 10px;
 }
